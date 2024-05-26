@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>image-tracking: girl theme</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./assets/target/targets.mind; maxTrack: 10" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <a-asset-item id="american_muscle_71_-_low_poly_model" src="assets/3D Model/american_muscle_71_-_low_poly_model/scene.gltf"></a-asset-item>
+        <a-asset-item id="aston_martin_v8_vantage_v600_1998" src="assets/3D Model/aston_martin_v8_vantage_v600_1998/scene.gltf"></a-asset-item>
+        <a-asset-item id="bmw_m3_e92_stance" src="assets/3D Model/bmw_m3_e92_stance/scene.gltf"></a-asset-item>
+        <a-asset-item id="boneworks_-_omni_worker" src="assets/3D Model/boneworks_-_omni_worker/scene.gltf"></a-asset-item>
+        <a-asset-item id="castanea_-_the_last_remnant" src="assets/3D Model/castanea_-_the_last_remnant/scene.gltf"></a-asset-item>
+        <a-asset-item id="dodge_charger_daytona_1969_custom_one" src="assets/3D Model/dodge_charger_daytona_1969_custom_one/scene.gltf"></a-asset-item>
+        <a-asset-item id="free_gmc_motorhome_reimagined_low_poly" src="assets/3D Model/free_gmc_motorhome_reimagined_low_poly/scene.gltf"></a-asset-item>
+        <a-asset-item id="izh-2715-pickup" src="assets/3D Model/izh-2715-pickup/scene.gltf"></a-asset-item>
+        <a-asset-item id="nissan_fairlady_z_s30240z_1978" src="assets/3D Model/nissan_fairlady_z_s30240z_1978/scene.gltf"></a-asset-item>
+        <a-asset-item id="triumph_tr6" src="assets/3D Model/triumph_tr6/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="2 2 2" src="#american_muscle_71_-_low_poly_model"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.2 0.2 0.2" src="#aston_martin_v8_vantage_v600_1998"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="0 0 0" position="-0.1 0 0" scale="0.15 0.15 0.15" src="#bmw_m3_e92_stance"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="1 1 1" src="#boneworks_-_omni_worker"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model rotation="0 0 0" position="0 -1 0" scale="1.1 1.1 1.1" src="#castanea_-_the_last_remnant"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#dodge_charger_daytona_1969_custom_one"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#free_gmc_motorhome_reimagined_low_poly"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#izh-2715-pickup"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-gltf-model rotation="0 -90 0" position="0 0 0" scale="0.18 0.18 0.18" src="#nissan_fairlady_z_s30240z_1978"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.09 0.09 0.09" src="#triumph_tr6"></a-gltf-model>
+      </a-entity>
+
+
+    </a-scene>
+  </body>
+</html>

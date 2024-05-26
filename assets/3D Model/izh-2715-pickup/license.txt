@@ -1,0 +1,11 @@
+Model Information:
+* title:	IZH-2715-PICKUP
+* source:	https://sketchfab.com/3d-models/izh-2715-pickup-e40df534b7af43d08b4833d3a77c197f
+* author:	Ashkelon (https://sketchfab.com/Ashkelon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "IZH-2715-PICKUP" (https://sketchfab.com/3d-models/izh-2715-pickup-e40df534b7af43d08b4833d3a77c197f) by Ashkelon (https://sketchfab.com/Ashkelon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

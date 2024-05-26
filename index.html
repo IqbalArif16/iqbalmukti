@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marker-tracking: girl theme</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- Correcting zooming issue -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- Library untuk VR membangun 3D -->
+  <script src="./js/aframe/aframe.min.js"></script>
+  <!-- Library untuk AR yang melakukan pengenalan marker dan menyematkan kamera-->
+  <script src="./js/arjs/aframe-ar.js"></script>
+  <!-- include text geometry -->
+  <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded vr-mode-ui="enabled: false" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;">
+
+    <!-- create assets -->
+    <a-assets timeout="900000">
+      <a-asset-item id="american_muscle_71_-_low_poly_model" src="assets/3D Model/american_muscle_71_-_low_poly_model/scene.gltf"></a-asset-item>
+      <a-asset-item id="aston_martin_v8_vantage_v600_1998" src="assets/3D Model/aston_martin_v8_vantage_v600_1998/scene.gltf"></a-asset-item>
+      <a-asset-item id="bmw_m3_e92_stance" src="assets/3D Model/bmw_m3_e92_stance/scene.gltf"></a-asset-item>
+      <a-asset-item id="boneworks_-_omni_worker" src="assets/3D Model/boneworks_-_omni_worker/scene.gltf"></a-asset-item>
+      <a-asset-item id="castanea_-_the_last_remnant" src="assets/3D Model/castanea_-_the_last_remnant/scene.gltf"></a-asset-item>
+      <a-asset-item id="dodge_charger_daytona_1969_custom_one" src="assets/3D Model/dodge_charger_daytona_1969_custom_one/scene.gltf"></a-asset-item>
+      <a-asset-item id="free_gmc_motorhome_reimagined_low_poly" src="assets/3D Model/free_gmc_motorhome_reimagined_low_poly/scene.gltf"></a-asset-item>
+      <a-asset-item id="izh-2715-pickup" src="assets/3D Model/izh-2715-pickup/scene.gltf"></a-asset-item>
+      <a-asset-item id="nissan_fairlady_z_s30240z_1978" src="assets/3D Model/nissan_fairlady_z_s30240z_1978/scene.gltf"></a-asset-item>
+      <a-asset-item id="triumph_tr6" src="assets/3D Model/triumph_tr6/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-marker type="barcode" value="0">
+      <a-entity gltf-model="#american_muscle_71_-_low_poly_model" position="0 0 0" scale="0.003 0.003 0.003"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="1">
+      <a-entity gltf-model="#aston_martin_v8_vantage_v600_1998"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="2">
+      <a-entity gltf-model="#bmw_m3_e92_stance"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="3">
+      <a-entity gltf-model="#boneworks_-_omni_worker" position="-0.5 0 0"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="4">
+      <a-entity gltf-model="#castanea_-_the_last_remnant" scale="0.039 0.039 0.039"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="5">
+      <a-entity gltf-model="#dodge_charger_daytona_1969_custom_one" scale="0.5 0.5 0.5"></a-entity>
+    </a-marker>
+
+    <!-- hitam -->
+    <a-marker type="barcode" value="6">
+      <a-entity gltf-model="#free_gmc_motorhome_reimagined_low_poly" position="0 0 0" scale="0.10 0.10 0.10"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="7">
+      <a-entity gltf-model="#izh-2715-pickup" rotation="0 -90 0" scale="0.8 0.8 0.8"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="8">
+      <a-entity gltf-model="#nissan_fairlady_z_s30240z_1978" position="0 0 0" scale="70 70 70"></a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="9">
+      <a-entity gltf-model="#triumph_tr6" scale="90 90 90"></a-entity>
+    </a-marker>
+
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
